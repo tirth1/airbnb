@@ -92,7 +92,8 @@ function RootLayoutNav() {
           presentation: 'modal'
         }}/>
         <Stack.Screen name="listing/[id]" options={{
-          headerTitle: ''
+          headerTitle: '',
+          headerTransparent: true
         }}/>
         <Stack.Screen name="(modals)/booking" options={{
           presentation: 'transparentModal',
