@@ -50,7 +50,7 @@ const DetailsPage = () => {
             <Ionicons name="heart-outline" size={22} color={'#000'} />
           </TouchableOpacity>
         </View>
-      ),
+      ),  
       headerLeft: () => (
         <TouchableOpacity style={styles.roundButton} onPress={() => navigation.goBack()}>
           <Ionicons name="chevron-back" size={24} color={'#000'} />

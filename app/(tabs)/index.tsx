@@ -4,6 +4,8 @@ import { Link, Stack } from 'expo-router'
 import ExploreHeader from '../../components/ExploreHeader'
 import Listings from '../../components/Listings'
 import listingData from '../../assets/data/airbnb-listings.json'
+import ListingsMap from '../../components/ListingsMap'
+import listingsDataGeo from '../../assets/data/airbnb-listings.geo.json'
 
 const Index = () => {
 
@@ -19,8 +21,9 @@ const Index = () => {
       <Stack.Screen options={{
         header: () => <ExploreHeader onCategoryChanged={onDataChanges}/>
       }}/>
-
-      <Listings category={category} listings={listings}/>
+    <ListingsMap listings={listingsDataGeo}/>
+      {/* <Listings category={category} listings={listings}/> */}
+      
     </View>
   )
 }
